@@ -3,9 +3,11 @@ import { M_PLUS_Code_Latin } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Over_the_Rainbow } from 'next/font/google';
+
 const MPLUSCodeLatin = M_PLUS_Code_Latin({
   subsets: ["latin"],
 });
+
 const overTheRainbow = Over_the_Rainbow({ 
   weight: '400',
   subsets: ['latin'],
@@ -13,7 +15,7 @@ const overTheRainbow = Over_the_Rainbow({
 });
 
 export const metadata: Metadata = {
-  title: "Prototype 2.0",
+  title: "Prototype 3.0",
   description:
     "8+ hours of hackathon to build a prototype. Stay tuned for more updates.",
 };

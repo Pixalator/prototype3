@@ -10,9 +10,9 @@ export default function Home() {
   const faqData = [
     {
       id: 1,
-      question: "What is Prototype 2.0?",
+      question: "What is Prototype 3.0?",
       answer:
-        "Prototype 2.0 is an 8-hour hackathon where participants build a working MVP based on given problem statements.",
+        "Prototype 3.0 is an 8-hour hackathon where participants build a working MVP based on given problem statements.",
       icon: "🚀",
     },
     {
@@ -124,7 +124,7 @@ export default function Home() {
                         transition={{ duration: 0.6, delay: 0.5 }}
                       >
                         <span className="gradient-text">Prototype</span>{" "}
-                        <span className="text-[#6c63ff]">2.0</span>
+                        <span className="text-[#6c63ff]">3.0</span>
                       </motion.h1>
 
                       <motion.p
@@ -143,7 +143,7 @@ export default function Home() {
                         transition={{ duration: 0.6, delay: 0.7 }}
                       >
                         Oh we back with a bang! Join us for some amazing 8 hours
-                        of your daily life vibe coding and fun at Prototype 2.0
+                        of your daily life vibe coding and fun at Prototype 3.0
                         Hackathon!
                       </motion.p>
 
@@ -215,11 +215,11 @@ export default function Home() {
                       <div className="w-36 sm:w-48 h-36 sm:h-48 rounded-full bg-[#6c63ff]/20 blur-3xl absolute"></div>
                       <div className="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-[#ff6584]/20 blur-3xl absolute -top-10 -right-10"></div>
 
-                      {/* Main visual element - Replace with your SVG */}
+                      {/* Main visual element */}
                       <div className="relative z-10 w-full h-full max-w-xs sm:max-w-md flex items-center justify-center">
                         <Image
                           src="/10259340_4401278.svg"
-                          alt="Prototype 2.0 Hackathon Illustration"
+                          alt="Prototype 3.0 Hackathon Illustration"
                           width={400}
                           height={400}
                           className="w-full h-auto max-w-[200px] sm:max-w-sm"
@@ -335,22 +335,11 @@ export default function Home() {
                     priority
                   />
                 </div>
-                {/* <div className="flex items-center justify-center p-2">
-                <Image 
-                  src="/azure.svg"
-                  alt="Microsoft Azure logo"
-                  width={160}
-                  height={48}
-                  className="h-8 sm:h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-                  priority
-                />
-              </div> */}
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* About Section - Improved spacing and readability */}
         {/* Community Partners - Static Grid Layout */}
         <motion.div
           className="mt-16 sm:mt-24 mb-12 sm:mb-16 text-center"
@@ -362,9 +351,7 @@ export default function Home() {
             Community Partners
           </h3>
 
-          {/* Static grid container */}
           <div className="relative w-full max-w-5xl mx-auto py-6 sm:py-10">
-            {/* Logos grid - responsive from 2 columns on mobile to 4 on desktop */}
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 px-4">
               <div className="flex items-center justify-center">
                 <Image
@@ -423,7 +410,6 @@ export default function Home() {
               Frequently Asked <span className="gradient-text">Questions</span>
             </motion.h2>
 
-            {/* FAQ Section without container */}
             <motion.div
               className="w-full mx-auto px-2 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
