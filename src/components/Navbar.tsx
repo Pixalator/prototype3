@@ -20,7 +20,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
     }
-    
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -33,12 +33,12 @@ const Navbar = () => {
   // Navbar container animation
   const navbarVariants = {
     hidden: { y: -100, opacity: 0 },
-    visible: { 
-      y: 0, 
+    visible: {
+      y: 0,
       opacity: 1,
-      transition: { 
-        type: "spring", 
-        stiffness: 100, 
+      transition: {
+        type: "spring",
+        stiffness: 100,
         damping: 15,
         delay: 0.1
       }
@@ -47,18 +47,18 @@ const Navbar = () => {
 
   // Mobile menu animation
   const menuVariants = {
-    closed: { 
+    closed: {
       opacity: 0,
       scale: 0.95,
-      transition: { 
+      transition: {
         duration: 0.2,
         ease: "easeInOut"
       }
     },
-    open: { 
+    open: {
       opacity: 1,
       scale: 1,
-      transition: { 
+      transition: {
         duration: 0.2,
         ease: "easeInOut"
       }
@@ -85,19 +85,19 @@ const Navbar = () => {
       animate="visible"
       variants={navbarVariants}
     >
-      <nav 
+      <nav
         className={`
           rounded-xl px-4 py-4 sm:px-6 
           backdrop-blur-lg transition-all duration-300
-          ${scrolled 
-            ? 'bg-[#030014]/70 shadow-lg border border-white/10' 
+          ${scrolled
+            ? 'bg-[#030014]/70 shadow-lg border border-white/10'
             : 'bg-[#030014]/40 border border-white/5'}
         `}
       >
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between h-14">
             {/* Logo/Brand */}
-            <motion.div 
+            <motion.div
               className="flex-shrink-0"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -105,7 +105,7 @@ const Navbar = () => {
             >
               <Link href="/" className="flex items-center">
                 <span className="font-bold text-2xl md:text-3xl gradient-text tracking-tight">
-                  Prototype <span className="text-[#6c63ff]">2.0</span>
+                  Prototype <span className="text-[#6c63ff]">3.0</span>
                 </span>
               </Link>
             </motion.div>
@@ -129,7 +129,7 @@ const Navbar = () => {
                       `}
                     >
                       {link.name}
-                      <span 
+                      <span
                         className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6c63ff] transition-all duration-300
                         group-hover:w-full"
                       ></span>
@@ -147,15 +147,15 @@ const Navbar = () => {
               className="hidden md:block"
             >
               <Link href="https://forms.gle/pSgJvv2jAqij9ZzR7" className="flex items-center">
-              <button className="cursor-pointer 
+                <button className="cursor-pointer 
                 bg-gradient-to-r from-[#6c63ff] to-[#ff6584] 
                 px-5 py-2.5 rounded-lg font-medium text-white 
                 hover:shadow-lg hover:shadow-[#6c63ff]/20 transition-all
                 scale-100 hover:scale-105 duration-300
                 border border-white/10
               ">
-                Register Now
-              </button>
+                  Register Now
+                </button>
               </Link>
             </motion.div>
 
@@ -168,21 +168,21 @@ const Navbar = () => {
               >
                 <span className="sr-only">Open main menu</span>
                 <div className="relative w-6 h-5">
-                  <span 
+                  <span
                     className={`
                       absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out
                       ${isOpen ? 'rotate-45 translate-y-2.5' : 'rotate-0 translate-y-0'}
                     `}
                     style={{ top: '0%' }}
                   />
-                  <span 
+                  <span
                     className={`
                       absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out
                       ${isOpen ? 'opacity-0' : 'opacity-100'}
                     `}
                     style={{ top: '50%', transform: 'translateY(-50%)' }}
                   />
-                  <span 
+                  <span
                     className={`
                       absolute h-0.5 w-6 bg-current transform transition duration-300 ease-in-out
                       ${isOpen ? '-rotate-45 -translate-y-2.5' : 'rotate-0 translate-y-0'}
@@ -196,7 +196,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <motion.div 
+        <motion.div
           className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}
           initial="closed"
           animate={isOpen ? "open" : "closed"}

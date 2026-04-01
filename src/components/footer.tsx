@@ -31,7 +31,7 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-3xl font-bold">
-              <span className="gradient-text">Prototype</span> <span className="text-[#ff6584]">2.0</span>
+              <span className="gradient-text">Prototype</span> <span className="text-[#ff6584]">3.0</span>
             </h3>
           </motion.div>
 
@@ -50,12 +50,12 @@ const Footer = () => {
             </svg>
             <span>by</span>
             <a 
-              href="https://github.com/soham-khedkar" 
+              href="https://github.com/DivyaniK0610" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-[#6c63ff] hover:text-[#ff6584] transition-all duration-300"
             >
-              Soham Khedkar
+              Divyani Katre
             </a>
             <span>&</span>
             <a 
@@ -75,7 +75,7 @@ const Footer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            &copy; {new Date().getFullYear()} Prototype 2.0. All rights reserved.
+            &copy; {new Date().getFullYear()} Prototype 3.0. All rights reserved.
           </motion.div>
         </div>
       </motion.div>

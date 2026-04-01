@@ -75,14 +75,7 @@ export default function Home() {
       answer:
         "The judging criteria will be based on creativity, functionality, and presentation of the prototype. We will have a panel of judges who will evaluate the projects.",
       icon: "🔎",
-    },
-    {
-      id: 11,
-      question: "How is prototype team gonna ensure credibility of the event?",
-      answer:
-        "As someone who has participated in multiple hackathons and also won 2 of them I (Soham) promise you there will be complete transparency maintained in the event and the judging process. NO BS and biasedness.",
-      icon: "🤝",
-    },
+    }
   ];
 
   return (
